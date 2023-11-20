@@ -2,11 +2,11 @@ package aula2;
 
 
 public class Caneta {
-    public String marca;
-    public String cor;
-    private float ponta;
-    protected int carga;
-    protected boolean tampada;
+    String marca;
+    String cor;
+    float ponta;
+    int carga;
+    boolean tampada;
     
     void status() {
         System.out.println("Uma caneta de marca: " + this.marca);
@@ -16,15 +16,15 @@ public class Caneta {
         System.out.println("Esta tamapada? " + this.tampada);
     }
     
-    public void tampar() {
+    void tampar() {
         this.tampada = true;
     }
     
-    private void destampar() {
+    void destampar() {
         this.tampada = false;
     }
     
-    public void escrever() {
+    void escrever() {
         if(this.tampada == true) {
             System.out.println("Não é poss´vel escrever");
         }else {

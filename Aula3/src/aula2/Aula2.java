@@ -21,7 +21,7 @@ public class Aula2 {
         c1.status();
         c1.escrever();
         
-        sc.close();
+        //c1.escrever();
     }
     
 }
