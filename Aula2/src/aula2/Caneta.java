@@ -4,11 +4,13 @@ package aula2;
 public class Caneta {
     public String marca;
     public String cor;
-    private float ponta;
+    public float ponta;
     protected int carga;
-    protected boolean tampada;
+    private boolean tampada;
+            
+          
     
-    void status() {
+    public void status() {
         System.out.println("Uma caneta de marca: " + this.marca);
         System.out.println("Ponta: " + this.ponta);
         System.out.println("Cor: " + this.cor);
@@ -16,11 +18,11 @@ public class Caneta {
         System.out.println("Esta tamapada? " + this.tampada);
     }
     
-    public void tampar() {
+    protected void tampar() {
         this.tampada = true;
     }
     
-    private void destampar() {
+    protected void destampar() {
         this.tampada = false;
     }
     

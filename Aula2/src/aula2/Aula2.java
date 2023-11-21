@@ -7,7 +7,6 @@ public class Aula2 {
     public static void main(String[] args) {
         Caneta c1 = new Caneta();
         Scanner sc = new Scanner(System.in);
-        
         System.out.println("Digite a marca: ");
         c1.marca = sc.nextLine();
         System.out.println("Digite a cor");
@@ -17,7 +16,8 @@ public class Aula2 {
         
         System.out.println("Digite a carga: ");
         c1.carga = sc.nextInt();
-        c1.tampar();
+        //c1.tamapada = false;
+        c1.destampar();
         c1.status();
         c1.escrever();
         
